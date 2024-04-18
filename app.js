@@ -122,6 +122,7 @@ const onUpdateBtn = () => {
     let card = [...document.getElementById(updateId).children];
     card[0].innerHTML = `<h3 class="mb-0">${updateObj.title}</h3>`;
     card[1].innerHTML = `<h3 class="mb-0">${updateObj.body}</h3>`;
+    document.getElementById(updateId).scrollIntoView();
     snackBarMsg("selected post updated successfully!!!", "success", 2000);
 }
 

@@ -111,7 +111,7 @@ const onUpdateBtn = () => {
     // let updated object from formControls
     let updateObj = {
         title: titleControl.value,
-        body: bodyControl.value,
+        body: bodyControl.value.trim(),
         userId: userIdControl.value
     }
     //API call
@@ -155,7 +155,7 @@ const onFormSubmit = (eve) => {
     // new post object
     let newPost = {
         title: titleControl.value,
-        body: bodyControl.value,
+        body: bodyControl.value.trim(),
         userId: userIdControl.value
         //id
     }
